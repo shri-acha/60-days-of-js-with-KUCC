@@ -1,0 +1,54 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+
+nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.main {
+  grid-row: 2;
+}
+
+.hackers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px auto;
+  justify-content: center; /* optional: center content horizontally within the grid */
+}
+
+.hackers article {
+  text-align: center;
+}
+
+.hackers article img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+p {
+  margin-top: 10px;
+}
